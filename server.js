@@ -14,7 +14,8 @@ connectDB();
 
 //middlewares
 app.use(cors());
-app.use(morgan());
+app.use(morgan('combined')); 
+
 app.use(express.json());
 
 //PORT number
